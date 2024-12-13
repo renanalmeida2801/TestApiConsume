@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.teste"
-        minSdk = 34
+        minSdk = 33
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -80,13 +80,13 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    implementation("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-    implementation("androidx.compose.runtime:runtime:1.7.6") // Ajuste a versão conforme necessário
-    implementation("com.squareup.okhttp3:okhttp:4.11.0")
-    implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
-    implementation ("io.github.cdimascio:dotenv-kotlin:6.4.1")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    implementation(libs.androidx.runtime)
+    implementation(libs.okhttp)
+    implementation(libs.logging.interceptor)
+    implementation (libs.dotenv.kotlin)
+    implementation(libs.kotlinx.coroutines.android)
 
 
 }

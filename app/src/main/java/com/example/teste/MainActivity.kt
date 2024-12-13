@@ -9,8 +9,8 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            val api = RetrofitInstance.api
-            VideoUploader(api, "SEU_ACCESS_TOKEN", this)
+            val api = RetrofitInstance.instance
+            VideoUploader(api, this)
         }
     }
 }
